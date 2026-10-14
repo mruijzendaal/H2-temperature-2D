@@ -1,0 +1,32 @@
+[project]
+name = "h2-raman-imaging"
+version = "1.0.0"
+description = "Data and code for: 2D Raman imaging for vibrational and rotational temperature mapping in H2"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Martijn Daan Ruijzendaal", email = "martijn.ruijzendaal@maastrichtuniversity.nl" }]
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "cantera==3.2.0",
+    "matplotlib==3.10.8",
+    "numpy==2.2.1",
+    "pandas==3.0.1",
+    "ramlab",
+    "scipy==1.17.0",
+    "wedme-plots==2.0.6",
+]
+
+[tool.uv.sources]
+# ramlab: the commit with which the H2 transitions were calculated (see README). cantera is
+# not declared by ramlab, but imported by one of its dependencies (toddler).
+ramlab = { git = "https://github.com/Brightsite-Plasmalab/ramlab", tag = "2d-h2-raman-imaging-v1.0.0" }
+
+[dependency-groups]
+dev = ["ipykernel"]
+
+[build-system]
+requires = ["uv_build>=0.9,<0.10"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "h2_raman_imaging"

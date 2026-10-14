@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this data or software, please cite the article."
+title: "Data and code for: 2D Raman imaging for vibrational and rotational temperature mapping in H2"
+type: dataset
+authors:
+  - family-names: Del Cont-Bernard
+    given-names: D.
+    affiliation: "Circular Chemical Engineering, Maastricht University"
+  - family-names: Ruijzendaal
+    given-names: Martijn Daan
+    orcid: "https://orcid.org/0009-0008-1124-1420"
+    affiliation: "Circular Chemical Engineering, Maastricht University"
+  - family-names: Righart
+    given-names: T. W. H.
+    affiliation: "Circular Chemical Engineering, Maastricht University"
+  - family-names: van Rooij
+    given-names: G. J.
+    affiliation: "Circular Chemical Engineering, Maastricht University"
+  - family-names: Butterworth
+    given-names: T. D.
+    affiliation: "Circular Chemical Engineering, Maastricht University"
+license: MIT
+version: "1.0.0"
+repository-code: "https://github.com/Brightsite-Plasmalab/2D-H2-Raman-imaging"
+keywords:
+  - Raman scattering
+  - hydrogen
+  - hydrogen plasma
+  - interference bandpass filters
+  - thermometry
+  - vibrational-rotational non-equilibrium
+preferred-citation:
+  type: article
+  title: "2D Raman imaging for vibrational and rotational temperature mapping in H2"
+  authors:
+    - family-names: Del Cont-Bernard
+      given-names: D.
+    - family-names: Ruijzendaal
+      given-names: M. D.
+      orcid: "https://orcid.org/0009-0008-1124-1420"
+    - family-names: Righart
+      given-names: T. W. H.
+    - family-names: van Rooij
+      given-names: G. J.
+    - family-names: Butterworth
+      given-names: T. D.
+  journal: "Journal of Quantitative Spectroscopy and Radiative Transfer"
+  volume: 328
+  year: 2024
+  pages: "109145"
