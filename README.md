@@ -22,13 +22,26 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run
 uv run reproduce.py
 ```
 
-This installs Python 3.13 and the exact package versions in `uv.lock` into a local `.venv`, and
-writes the figures to `output/`. The first run takes about 1 minute, because the Raman
+uv installs Python 3.13 and the exact package versions in `uv.lock` into a local `.venv`, so the
+results do not depend on what is already installed on your machine. Figures are written to
+`output/`. The first run takes about 1 minute, because the Raman
 transitions of H<sub>2</sub> are calculated with [ramlab](https://github.com/Brightsite-Plasmalab/ramlab)
 (about 30 s); the result is kept in `output/cache/`, after which a run takes about 15 s.
 
+Without uv, use Python 3.13 and a virtual environment:
+
+```bash
+python3.13 -m venv .venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
+pip install .
+python reproduce.py
+```
+
+This installs the pinned direct dependencies from `pyproject.toml`, but not the exact versions of
+indirect ones.
+
 To work with the scripts interactively, open them in VS Code: the `# %%` markers make them run
-cell by cell, like a notebook. Select the `.venv` interpreter after running `uv sync`.
+cell by cell, like a notebook. Select the `.venv` interpreter.
 
 ## Contents
 

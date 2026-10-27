@@ -11,15 +11,12 @@ dependencies = [
     "matplotlib==3.10.8",
     "numpy==2.2.1",
     "pandas==3.0.1",
-    "ramlab",
+    # ramlab: the tag with which the H2 transitions were calculated (see README). cantera is not
+    # declared by ramlab, but imported by one of its dependencies (toddler).
+    "ramlab @ git+https://github.com/Brightsite-Plasmalab/ramlab@2d-h2-raman-imaging-v1.0.0",
     "scipy==1.17.0",
     "wedme-plots==2.0.6",
 ]
-
-[tool.uv.sources]
-# ramlab: the commit with which the H2 transitions were calculated (see README). cantera is
-# not declared by ramlab, but imported by one of its dependencies (toddler).
-ramlab = { git = "https://github.com/Brightsite-Plasmalab/ramlab", tag = "2d-h2-raman-imaging-v1.0.0" }
 
 [dependency-groups]
 dev = ["ipykernel"]

@@ -200,7 +200,7 @@ requires-dist = [
     { name = "matplotlib", specifier = "==3.10.8" },
     { name = "numpy", specifier = "==2.2.1" },
     { name = "pandas", specifier = "==3.0.1" },
-    { name = "ramlab", git = "https://github.com/Brightsite-Plasmalab/ramlab?tag=2d-h2-raman-imaging-v1.0.0" },
+    { name = "ramlab", git = "https://github.com/Brightsite-Plasmalab/ramlab?rev=2d-h2-raman-imaging-v1.0.0" },
     { name = "scipy", specifier = "==1.17.0" },
     { name = "wedme-plots", specifier = "==2.0.6" },
 ]
@@ -672,7 +672,7 @@ wheels = [
 [[package]]
 name = "ramlab"
 version = "0.0.1"
-source = { git = "https://github.com/Brightsite-Plasmalab/ramlab?tag=2d-h2-raman-imaging-v1.0.0#7afa40e75507f9cf5b20fabb40a7577d96b73e4e" }
+source = { git = "https://github.com/Brightsite-Plasmalab/ramlab?rev=2d-h2-raman-imaging-v1.0.0#7afa40e75507f9cf5b20fabb40a7577d96b73e4e" }
 dependencies = [
     { name = "h2-rovib-me" },
     { name = "labctl" },
